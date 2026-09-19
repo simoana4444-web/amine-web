@@ -42,6 +42,388 @@
         /* قسم الترحيب */
         .hero {
             background: linear-gradient(135deg, #0a1628 0%, #123a5f 60%, #0e7490 100%);
+            padding: 60px 20px;
+        }
+        .hero-inner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            max-width: 1100px;
+            margin: auto;
+        }
+        .hero-text { max-width: 460px; }
+        .badge {
+            display: inline-block;
+            background: rgba(56, 189, 248, 0.15);
+            color: #38bdf8;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 18px;
+        }
+        .hero-text h1 {
+            font-size: 44px;
+            font-weight: 900;
+            line-height: 1.35;
+            margin-bottom: 15px;
+        }
+        .hero-text h1 span { color: #38bdf8; }
+        .hero-text p {
+            font-size: 18px;
+            color: #94a3b8;
+            margin-bottom: 25px;
+        }
+        .btn {
+            background: linear-gradient(90deg, #0ea5e9, #38bdf8);
+            color: #fff;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 18px;
+            display: inline-block;
+            box-shadow: 0 5px 25px rgba(56, 189, 248, 0.4);
+        }
+
+        /* الأجهزة (حاسوب + تيليفون) */
+        .devices { position: relative; width: 420px; height: 280px; }
+        .monitor {
+            background: #fff;
+            border: 8px solid #1e293b;
+            border-radius: 14px;
+            width: 360px;
+            height: 220px;
+            overflow: hidden;
+            box-shadow: 0 20px 45px rgba(0,0,0,0.5);
+        }
+        .m-nav {
+            background: #fff;
+            padding: 8px 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e2e8f0;
+            font-size: 11px;
+            font-weight: 800;
+            color: #0ea5e9;
+        }
+        .m-hero {
+            background: linear-gradient(135deg, #0ea5e9, #38bdf8);
+            color: #fff;
+            text-align: center;
+            padding: 35px 15px;
+        }
+        .m-hero h5 { font-size: 17px; margin-bottom: 8px; }
+        .m-hero p { font-size: 11px; opacity: 0.9; margin-bottom: 12px; }
+        .m-btn {
+            background: #fff;
+            color: #0ea5e9;
+            padding: 6px 18px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 800;
+            display: inline-block;
+        }
+        .m-stand {
+            width: 70px;
+            height: 14px;
+            background: #1e293b;
+            margin: auto;
+            border-radius: 0 0 8px 8px;
+        }
+        .phone {
+            position: absolute;
+            bottom: -8px;
+            left: -6px;
+            background: #fff;
+            border: 6px solid #1e293b;
+            border-radius: 20px;
+            width: 105px;
+            height: 200px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+        }
+        .p-hero {
+            background: linear-gradient(160deg, #123a5f, #0e7490);
+            color: #fff;
+            text-align: center;
+            padding: 18px 8px;
+        }
+        .p-hero .cart { font-size: 30px; }
+        .p-hero h6 { font-size: 11px; margin: 6px 0; }
+        .p-btn {
+            background: #38bdf8;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 9px;
+            font-weight: 800;
+            display: inline-block;
+        }
+
+        /* الخدمات */
+        .services { text-align: center; padding: 70px 20px; }
+        .services h2, .portfolio h2 {
+            font-size: 32px;
+            font-weight: 900;
+            margin-bottom: 10px;
+        }
+        .services h2 span, .portfolio h2 span { color: #38bdf8; }
+        .section-sub { color: #94a3b8; margin-bottom: 45px; font-size: 17px; }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: linear-gradient(145deg, #12233d, #0d1b30);
+            border: 1px solid rgba(56, 189, 248, 0.15);
+            width: 240px;
+            padding: 30px 20px;
+            border-radius: 18px;
+            transition: transform 0.3s;
+        }
+        .card:hover { transform: translateY(-8px); border-color: #38bdf8; }
+        .card .icon { font-size: 38px; margin-bottom: 15px; }
+        .card h3 { font-size: 18px; margin-bottom: 8px; }
+        .card p { color: #94a3b8; font-size: 14px; }
+
+        /* الأعمال (بالصور الحقيقية) */
+        .portfolio {
+            background: #0d1b30;
+            text-align: center;
+            padding: 70px 20px;
+        }
+        .work {
+            background: #12233d;
+            border: 1px solid rgba(56, 189, 248, 0.1);
+            width: 300px;
+            border-radius: 18px;
+            overflow: hidden;
+            text-align: right;
+        }
+        .work img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+            display: block;
+        }
+        .work .info { padding: 15px 18px; }
+        .work h4 { font-size: 17px; margin-bottom: 5px; }
+        .work p { color: #94a3b8; font-size: 13px; }
+
+        /* لماذا نحن */
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            padding: 0 20px 60px;
+        }
+        .feature {
+            background: rgba(56, 189, 248, 0.08);
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            padding: 15px 25px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 15px;
+        }
+
+        /* التواصل */
+        .contact {
+            background: linear-gradient(135deg, #0e7490, #123a5f);
+            text-align: center;
+            padding: 70px 20px;
+        }
+        .contact h2 { font-size: 30px; font-weight: 900; margin-bottom: 15px; }
+        .contact p { color: #cbd5e1; margin-bottom: 30px; font-size: 17px; }
+        .btn-whatsapp {
+            background: #25d366;
+            color: #fff;
+            padding: 16px 45px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 19px;
+            display: inline-block;
+            margin-bottom: 25px;
+        }
+        .contact .info { color: #e2e8f0; font-size: 16px; line-height: 2; }
+
+        footer {
+            background: #060d18;
+            text-align: center;
+            padding: 20px;
+            color: #64748b;
+            font-size: 14px;
+        }
+        footer span { color: #38bdf8; font-weight: 800; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">A <span>Amine Web</span></div>
+        <div>
+            <a href="#services">خدماتنا</a>
+            <a href="#portfolio">أعمالنا</a>
+            <a href="#contact">اتصل بنا</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-inner">
+            <div class="hero-text">
+                <div class="badge">🚀 Design | Développement | Votre Réussite</div>
+                <h1>حوّل فكرتك إلى<br><span>موقع احترافي</span></h1>
+                <p>مواقع احترافية لنجاح أكبر — تصميم عصري، سرعة في الإنجاز، ودعم مستمر</p>
+                <a class="btn" href="#contact">ابدأ مشروعك الآن</a>
+            </div>
+            <div class="devices">
+                <div class="monitor">
+                    <div class="m-nav">
+                        <span>A Amine Web</span>
+                        <span style="color:#94a3b8; font-weight:400;">الرئيسية · خدماتنا · اتصل بنا</span>
+                    </div>
+                    <div class="m-hero">
+                        <h5>اكتشف جمال المغرب</h5>
+                        <p>تجارب فريدة في كل وجهة</p>
+                        <span class="m-btn">اكتشف الآن</span>
+                    </div>
+                </div>
+                <div class="m-stand"></div>
+                <div class="phone">
+                    <div class="p-hero">
+                        <div class="cart">🛒</div>
+                        <h6>متجرك الإلكتروني</h6>
+                        <span class="p-btn">تسوق الآن</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="services" id="services">
+        <h2>خدمات<span>نا</span></h2>
+        <p class="section-sub">كل ما تحتاجه لبناء حضور رقمي قوي</p>
+        <div class="cards">
+            <div class="card">
+                <div class="icon">🏢</div>
+                <h3>مواقع الشركات</h3>
+                <p>موقع يعكس احترافية شركتك ويبني ثقة عملائك</p>
+            </div>
+            <div class="card">
+                <div class="icon">🛒</div>
+                <h3>المتاجر الإلكترونية</h3>
+                <p>متجر متكامل للبيع أونلاين مع الدفع والتوصيل</p>
+            </div>
+            <div class="card">
+                <div class="icon">👤</div>
+                <h3>المواقع الشخصية</h3>
+                <p>موقع شخصي يعرّف بك وبمهاراتك وأعمالك</p>
+            </div>
+            <div class="card">
+                <div class="icon">🎨</div>
+                <h3>تصميم حسب الطلب</h3>
+                <p>تصميم فريد يناسب هويتك وأسلوبك الخاص</p>
+            </div>
+            <div class="card">
+                <div class="icon">⚡</div>
+                <h3>سرعة الإنجاز</h3>
+                <p>موقعك جاهز في 48 ساعة فقط</p>
+            </div>
+            <div class="card">
+                <div class="icon">🛠️</div>
+                <h3>دعم بعد التسليم</h3>
+                <p>متابعة وتحديثات حتى بعد تسليم الموقع</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio" id="portfolio">
+        <h2>أعم<span>النا</span></h2>
+        <p class="section-sub">نماذج من المواقع التي نفذناها</p>
+        <div class="cards">
+            <div class="work">
+                <img src="resto.jpg" alt="مطاعم">
+                <div class="info">
+                    <h4>🍽️ مطاعم وقاعات</h4>
+                    <p>قائمة أطباق + حجز القاعات</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="salon.jpg" alt="صالونات">
+                <div class="info">
+                    <h4>💇 صالونات التجميل</h4>
+                    <p>خدمات وأسعار + حجز مواعيد</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="shop.jpg" alt="متجر">
+                <div class="info">
+                    <h4>🛒 متاجر إلكترونية</h4>
+                    <p>بيع المنتجات أونلاين</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="company.jpg" alt="شركة">
+                <div class="info">
+                    <h4>🏢 موقع شركة</h4>
+                    <p>هوية احترافية وخدمات متكاملة</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="personal.jpg" alt="شخصي">
+                <div class="info">
+                    <h4>👤 موقع شخصي</h4>
+                    <p>معرض أعمال وسيرة ذاتية</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="school.jpg" alt="تعليم">
+                <div class="info">
+                    <h4>🎓 مدرسة تعليمية</h4>
+                    <p>دروس + تسجيل الطلبة</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="features">
+        <div class="feature">📱 توافق مع الهاتف والحاسوب</div>
+        <div class="feature">🌐 استضافة مجانية</div>
+        <div class="feature">⚡ تسليم في 48 ساعة</div>
+        <div class="feature">🔒 دعم مستمر</div>
+    </div>
+
+    <div class="contact" id="contact">
+        <h2>جاهز تبدأ مشروعك؟</h2>
+        <p>تواصل معنا الآن واحصل على استشارة مجانية</p>
+        <a class="btn-whatsapp" href="https://wa.me/212628025220">💬 تواصل معنا الآن</a>
+        <div class="info">
+            📞 +212 628 025 220<br>
+            📧 amineassila666@gmail.com
+        </div>
+    </div>
+
+    <footer>
+        © 2026 <span>Amine Web</span> — Design | Développement | Votre Réussite
+    </footer>
+
+</body>
+</html>
+            margin-right: 20px;
+            font-weight: 500;
+        }
+        nav a:hover { color: #38bdf8; }
+
+        /* قسم الترحيب */
+        .hero {
+            background: linear-gradient(135deg, #0a1628 0%, #123a5f 60%, #0e7490 100%);
             text-align: center;
             padding: 90px 20px 70px;
         }
