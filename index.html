@@ -56,6 +56,7 @@
             font-weight: 800; font-size: 18px; display: inline-block;
             box-shadow: 0 5px 25px rgba(56, 189, 248, 0.4);
         }
+        .price { margin-top: 20px; font-size: 20px; font-weight: 800; color: #25d366; }
         .devices { position: relative; width: 420px; height: 280px; }
         .monitor {
             background: #fff; border: 8px solid #1e293b; border-radius: 14px;
@@ -98,6 +99,15 @@
         .card .icon { font-size: 38px; margin-bottom: 15px; }
         .card h3 { font-size: 18px; margin-bottom: 8px; }
         .card p { color: #94a3b8; font-size: 14px; }
+        .review-card {
+            background: rgba(37, 211, 102, 0.07);
+            border: 1px solid rgba(37, 211, 102, 0.25);
+            width: 320px; padding: 25px; border-radius: 18px; text-align: right;
+            transition: transform 0.3s;
+        }
+        .review-card:hover { transform: translateY(-8px); }
+        .review-card p { font-size: 17px; margin-bottom: 10px; }
+        .review-card small { color: #38bdf8; font-weight: 700; }
         .portfolio { background: #0d1b30; text-align: center; padding: 70px 20px; }
         .work {
             background: #12233d; border: 1px solid rgba(56, 189, 248, 0.1);
@@ -107,6 +117,8 @@
         .work .info { padding: 15px 18px; }
         .work h4 { font-size: 17px; margin-bottom: 5px; }
         .work p { color: #94a3b8; font-size: 13px; }
+        .work a { color: #38bdf8; font-weight: 700; font-size: 13px; display: inline-block; margin-top: 8px; text-decoration: none; }
+        .work a:hover { text-decoration: underline; }
         .features { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; padding: 0 20px 60px; }
         .feature {
             background: rgba(56, 189, 248, 0.08); border: 1px solid rgba(56, 189, 248, 0.2);
@@ -141,7 +153,8 @@
                 <div class="badge">🚀 Design | Développement | Votre Réussite</div>
                 <h1>حوّل فكرتك إلى<br><span>موقع احترافي</span></h1>
                 <p>مواقع احترافية لنجاح أكبر — تصميم عصري، سرعة في الإنجاز، ودعم مستمر</p>
-                <a class="btn" href="#contact">ابدأ مشروعك الآن</a>
+                <a class="btn" href="https://wa.me/212628025220" target="_blank">ابدأ مشروعك الآن</a>
+                <div class="price">💰 الأسعار تبدأ من 499 درهم فقط</div>
             </div>
             <div class="devices">
                 <div class="monitor">
@@ -220,6 +233,7 @@
                 <div class="info">
                     <h4>💇 صالونات التجميل</h4>
                     <p>خدمات وأسعار + حجز مواعيد</p>
+                    <a href="https://simoana4444-web.github.io/coiffure-demo/" target="_blank">شاهد الموقع ←</a>
                 </div>
             </div>
             <div class="work">
@@ -227,6 +241,7 @@
                 <div class="info">
                     <h4>🛒 متاجر إلكترونية</h4>
                     <p>بيع المنتجات أونلاين</p>
+                    <a href="https://simoana4444-web.github.io/home-barber/" target="_blank">شاهد الموقع ←</a>
                 </div>
             </div>
             <div class="work">
@@ -260,21 +275,59 @@
         <div class="feature">🔒 دعم مستمر</div>
     </div>
 
+    <div class="services" style="background:#0d1b30;">
+        <h2>كيف <span>نخدم؟</span></h2>
+        <p class="section-sub">3 خطوات بسيطة وموقعك واجد!</p>
+        <div class="cards">
+            <div class="card">
+                <div class="icon">💬</div>
+                <h3>1. تواصل معنا</h3>
+                <p>ابعت لينا فكرتك واتساب ونناقش التفاصيل</p>
+            </div>
+            <div class="card">
+                <div class="icon">🎨</div>
+                <h3>2. نصمم ليك</h3>
+                <p>تصميم احترافي يناسب نشاطك وهويتك</p>
+            </div>
+            <div class="card">
+                <div class="icon">⚡</div>
+                <h3>3. تسليم فـ 48 ساعة</h3>
+                <p>موقعك حي على الإنترنت + دعم مستمر</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="services">
+        <h2>واش <span>قالو علينا؟</span> ⭐</h2>
+        <p class="section-sub">آراء زبناء كيثيقو بينا</p>
+        <div class="cards">
+            <div class="review-card">
+                <p>💬 "الموقع جاب ليا زبناء جداد!"</p>
+                <small>— صالون ففاس 💈</small>
+            </div>
+            <div class="review-card">
+                <p>💬 "خدمة سريعة واحترافية بزاف!"</p>
+                <small>— صاحب متجر إلكتروني 🛍️</small>
+            </div>
+        </div>
+    </div>
+
     <div class="contact" id="contact">
         <h2>جاهز تبدأ مشروعك؟</h2>
         <p>تواصل معنا الآن واحصل على استشارة مجانية</p>
-        <a class="btn-whatsapp" href="https://wa.me/212628025220">💬 تواصل معنا الآن</a>
+        <a class="btn-whatsapp" href="https://wa.me/212628025220" target="_blank">💬 تواصل معنا الآن</a>
         <div class="info">
             📞 +212 628 025 220<br>
-📧 amineweb.ma@gmail.com
-
+            📧 <a href="mailto:amineweb.ma@gmail.com" style="color:#e2e8f0; text-decoration:none;">amineweb.ma@gmail.com</a>
         </div>
+    </div>
 
     <footer>
         © 2026 <span>Amine Web</span> — Design | Développement | Votre Réussite
     </footer>
-    <!-- زر الواتساب العائم -->
-      </body>
-</html>
-<!-- تحديث 2026 -->
 
+    <!-- زر الواتساب العائم -->
+    <a href="https://wa.me/212628025220" target="_blank" style="position:fixed; bottom:20px; left:20px; background:#25d366; color:#fff; width:60px; height:60px; border-radius:50%; display:flex; align-items:center; justify-content:center; text-decoration:none; font-size:30px; box-shadow:0 4px 12px rgba(0,0,0,0.3); z-index:9999;">💬</a>
+
+</body>
+</html>
